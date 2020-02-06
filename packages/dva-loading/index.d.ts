@@ -1,4 +1,4 @@
-import { Hooks } from 'dva-core';
+import { Hooks } from 'dva-core-ts';
 export interface DvaLoadingState {
   global: boolean;
   models: { [type: string]: boolean | undefined };

@@ -9,7 +9,6 @@ import {
   bindActionCreators,
 } from 'redux';
 import { select, take, cancel, put, call } from 'redux-saga/effects';
-import { History } from 'history';
 
 export interface Dispatch<A extends Action = AnyAction> {
   <T extends A>(action: T): Promise<any> | T;
@@ -82,15 +81,6 @@ export interface Model {
   subscriptions?: SubscriptionsMapObject;
 }
 
-export interface RouterAPI {
-  history: History;
-  app: DvaInstance;
-}
-
-export interface Router {
-  (api?: RouterAPI): JSX.Element | Object;
-}
-
 export interface DvaInstance {
   /**
    * Register an object of hooks on the application.
@@ -124,7 +114,7 @@ export interface DvaInstance {
   _store: Store;
 }
 
-export default function create(hooksAndOpts?: DvaOption, createOpts?: CreateOpts): DvaInstance;
+export function create(hooksAndOpts?: DvaOption, createOpts?: CreateOpts): DvaInstance;
 
 export { bindActionCreators };
 
