@@ -1,6 +1,6 @@
 {
-  "name": "dva-loading",
-  "version": "3.0.20",
+  "name": "dva-loading-ts",
+  "version": "3.0.21",
   "description": "Auto loading data binding plugin for dva.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -27,7 +27,8 @@
   },
   "files": [
     "dist",
-    "src"
+    "src",
+    "*.d.ts"
   ],
   "dependencies": {
     "@babel/runtime": "^7.0.0"
