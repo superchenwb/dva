@@ -1,6 +1,6 @@
 {
-  "name": "dva-core",
-  "version": "2.0.2",
+  "name": "dva-core-ts",
+  "version": "2.0.3",
   "description": "The core lightweight library for dva, based on redux and redux-saga.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -8,9 +8,9 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/dvajs/dva"
+    "url": "https://github.com/superchenwb/dva"
   },
-  "homepage": "https://github.com/dvajs/dva",
+  "homepage": "https://github.com/superchenwb/dva",
   "keywords": [
     "dva",
     "alibaba",
